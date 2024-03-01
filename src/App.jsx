@@ -65,7 +65,7 @@ function App() {
             <div>
               <h2 className="font-bold text-4xl">Hello, Vidyanad,</h2>
               <div>
-                <h2 className="font-bold text-4xl mt-1 gradiant-text">frontend developer</h2>
+                <h2 className="font-bold text-4xl mt-1 gradiant-text">fullstack developer</h2>
               </div>
               <div>
                 <p className="mt-4 text-gray-400">
@@ -168,14 +168,14 @@ function App() {
             <div className="mt-14">
               <div>
                 <div className="flex justify-between items-center">
-                  <h2 className="font-semibold">HTML</h2>
+                  <h2 className="font-semibold">HTML, CSS & Bootstrap</h2>
                   <p className="text-gray-500">Advanced</p>
                 </div>
                 <span className="w-full h-2 mt-2 bg-gradient-to-t from-blue-500 to-cyan-500 block rounded-md" />
               </div>
               <div className="mt-8">
                 <div className="flex justify-between items-center">
-                  <h2 className="font-semibold">CSS, Sass & Bootstrap</h2>
+                  <h2 className="font-semibold">JavaScript, React Js, Node Js, Express Js, MongoDB</h2>
                   <p className="text-gray-500">Advanced</p>
                 </div>
                 <span className="w-full h-2 mt-2 bg-gradient-to-t from-blue-500 to-cyan-500 block rounded-md" />
@@ -183,36 +183,39 @@ function App() {
               <div className="mt-8">
                 <div className="flex justify-between items-center">
                   <h2 className="font-semibold">
-                    JavaScript, TypeScript, JQuery
+                  C, C++, SQL
                   </h2>
                   <p className="text-gray-500">Advanced</p>
                 </div>
                 <span className="w-full h-2 mt-2 bg-gradient-to-t from-blue-500 to-cyan-500 block rounded-md" />
               </div>
-              <div className="mt-8">
+
+              {/* <div className="mt-8">
                 <div className="flex justify-between items-center">
                   <h2 className="font-semibold">UI design in Figma</h2>
                   <p className="text-gray-500">Advanced</p>
                 </div>
                 <span className="w-[75%] h-2 mt-2 bg-gradient-to-t from-blue-500 to-cyan-500 block rounded-md" />
-              </div>
-              <div className="mt-8">
+              </div> */}
+
+              {/* <div className="mt-8">
                 <div className="flex justify-between items-center">
                   <h2 className="font-semibold">Angular</h2>
                   <p className="text-gray-500">Advanced</p>
                 </div>
                 <span className="w-[50%] h-2 mt-2 bg-gradient-to-t from-blue-500 to-cyan-500 block rounded-md" />
-              </div>
+              </div> */}
+
               <div className="mt-8">
                 <div className="flex justify-between items-center">
-                  <h2 className="font-semibold">React</h2>
+                  <h2 className="font-semibold">C++, SQL</h2>
                   <p className="text-gray-500">Advanced</p>
                 </div>
                 <span className="w-[90%] h-2 mt-2 bg-gradient-to-t from-blue-500 to-cyan-500 block rounded-md" />
               </div>
               <div className="mt-8">
                 <div className="flex justify-between items-center">
-                  <h2 className="font-semibold">React Native</h2>
+                  <h2 className="font-semibold">React</h2>
                   <p className="text-gray-500">Advanced</p>
                 </div>
                 <span className="w-[45%] h-2 mt-2 bg-gradient-to-t from-blue-500 to-cyan-500 block rounded-md" />
@@ -229,12 +232,12 @@ function App() {
             <div className="flex flex-col sm:flex-row gap-4 sm:gap-28 mt-12 w-[80%]">
               <div>
                 <p className="font-bold before:w-4 before:h-4 before:bg-gradient-to-t before:from-blue-500 before:to-cyan-500 before:block before:rounded-full before:mt-1 before:-left-6 before:absolute relative left-5">
-                  Git
+                  Git, Github
                 </p>
               </div>
               <div>
                 <p className="font-bold before:w-4 before:h-4 before:bg-gradient-to-t before:from-blue-500 before:to-cyan-500 before:block before:rounded-full before:mt-1 before:-left-6 before:absolute relative left-5">
-                  Wordpress
+                  vs code
                 </p>
               </div>
               <div>
@@ -256,12 +259,12 @@ function App() {
               </div>
               <div>
                 <p className="font-bold before:w-4 before:h-4 before:bg-gradient-to-t before:from-blue-500 before:to-cyan-500 before:block before:rounded-full before:mt-1 before:-left-6 before:absolute relative left-5">
-                  B2 english
+                  Leadership
                 </p>
               </div>
               <div>
                 <p className="font-bold before:w-4 before:h-4 before:bg-gradient-to-t before:from-blue-500 before:to-cyan-500 before:block before:rounded-full before:mt-1 before:-left-6 before:absolute relative left-5">
-                  RWD
+                  GitHub
                 </p>
               </div>
             </div>
@@ -311,7 +314,7 @@ function App() {
       <footer>
         <div className="container m-auto flex justify-between px-4 py-6">
           <div>
-            <p className="text-gray-300 text-sm">Copyright @ 2023</p>
+            <p className="text-gray-300 text-sm">Copyright @ 2024</p>
           </div>
           <div>
             <ul className="flex gap-4">
