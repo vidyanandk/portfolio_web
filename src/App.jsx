@@ -400,18 +400,20 @@ function App() {
           <div>
             <ul className="flex gap-4">
               <li>
-                <a>
-                  <img src={Facebook} className="w-5" />
+
+              <a>
+                  <img src={LinkedIn} className="w-5 to-cyan-500 hover:from-blue-700 hover:to-cyan-700" onClick={()=>handleClick({url:'https://www.linkedin.com/in/vidyanandkumar2210/'})} />
                 </a>
+                
               </li>
               <li>
                 <a>
-                  <img src={LinkedIn} className="w-5" />
+                  <img src={Instagram} className="w-5" onClick={()=>handleClick({url:'https://www.linkedin.com/in/vidyanandkumar2210/'})} />
                 </a>
               </li>
               <li>
-                <a>
-                  <img src={Instagram} className="w-5" />
+              <a>
+                  <img src={Facebook} className="w-5" onClick={()=>handleClick({url:'https://www.linkedin.com/in/vidyanandkumar2210/'})} />
                 </a>
               </li>
             </ul>
