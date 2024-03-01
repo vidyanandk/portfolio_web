@@ -1,14 +1,15 @@
 import "./App.css";
-import Porfile from "./assets/Photo.jpg";
-import Project1 from "./assets/project1.png";
-import Project2 from "./assets/project2.png";
-import Project3 from "./assets/project3.png";
-import Project4 from "./assets/project4.png";
-import Facebook from "./assets/facebook.svg";
-import LinkedIn from "./assets/linkedin.svg";
-import Instagram from "./assets/instagram.svg";
-import ArrowDown from "./assets/arrow-down.svg";
+import Porfile from "../public/assets/Photo.jpg";
+import Project1 from "../public/assets/project1.png";
+import Project2 from "../public/assets/project2.png";
+import Project3 from "../public/assets/project3.png";
+import Project4 from "../public/assets/project4.png";
+import Facebook from "../public/assets/facebook.svg";
+import LinkedIn from "../public/assets/linkedin.svg";
+import Instagram from "../public/assets/instagram.svg";
+import ArrowDown from "../public/assets/arrow-down.svg";
 import { useEffect, useState } from "react";
+
 
 function App() {
   const [scrolling, setScrolling] = useState(false);
@@ -27,6 +28,12 @@ function App() {
       window.removeEventListener("scroll", onPageScroll)
     }
   }, [])
+
+
+  const handleClick = ({url}) => {
+    // Navigate to the website in the same tab
+    window.location.href = url;
+  }
 
   return (
     <div className="max-w-4xl m-auto relative">
@@ -271,7 +278,80 @@ function App() {
           </div>
         </section>
 
-        
+       {/* coding profile */}
+       <section>
+          <div className="container m-auto px-4 py-14">
+            <h2 className="text-2xl font-semibold">Coding Profile</h2>
+            <div className="mt-12 flex flex-col sm:flex-row lg:flex-row justify-center gap-1">
+              <div className="w-[148px] border border-gray-500 rounded-md p-5 flex-1">
+                <div className="w-full  h-auto">
+                  <img src="../public/assets/leetcode.png" />
+                </div>
+                <button className="w-full h-auto flex-1 text-sm py-3 bg-gradient-to-t from-blue-500 rounded-[2px] to-cyan-500 hover:from-blue-700 hover:to-cyan-700" onClick={()=>handleClick({url:'https://leetcode.com/vidy7014/'})}>
+                    Leetcode
+                  </button>
+              </div>
+              <div className="w-[148px] border border-gray-500 rounded-md p-5 flex-1">
+                <div className="w-full h-auto">
+                  <img src="../public/assets/codeforce.png" />
+                </div>
+                <button className="w-full h-auto flex-1 text-sm py-3 bg-gradient-to-t from-blue-500 rounded-[2px] to-cyan-500 hover:from-blue-700 hover:to-cyan-700" onClick={()=>handleClick({url:'https://codeforces.com/profile/Vidyanand'})}>
+                    Codeforces
+                  </button>
+              </div>
+              <div className="w-[148px] border border-gray-500 rounded-md p-5 flex-1">
+                <div className="w-full h-auto">
+                  <img src="../public/assets/codechef.jpg" />
+                </div>
+                <button className="w-full h-auto flex-1 text-sm py-3 bg-gradient-to-t from-blue-500 rounded-[2px] to-cyan-500 hover:from-blue-700 hover:to-cyan-700" onClick={()=>handleClick({url:'https://www.codechef.com/users/sky100'})}>
+                    Codechef
+                  </button>
+              </div>
+              <div className="w-[148px] border border-gray-500 rounded-md p-5 flex-1">
+                <div className="w-full h-auto">
+                  <img src="../public/assets/gfg.png" />
+                </div>
+                <button className="w-full h-auto flex-1 text-sm py-3 bg-gradient-to-t from-blue-500 rounded-[2px] to-cyan-500 hover:from-blue-700 hover:to-cyan-700" onClick={()=>handleClick({url:'https://auth.geeksforgeeks.org/user/vidyanandkugd88/'})}>
+                    GFG
+                  </button>
+              </div>
+            </div>
+
+
+
+
+            {/* <div className="mt-12">
+              <div className="flex justify-between items-center">
+
+                <h2 className="font-semibold">Codeforces</h2>
+                <p className="text-gray-500">Advanced</p>
+              </div>
+              <span className="w-full h-2 mt-2 bg-gradient-to-t from-blue-500 to-cyan-500 block rounded-md" />
+          </div>
+          <div className="mt-8">    
+              <div className="flex justify-between items-center">
+                <h2 className="font-semibold">LeetCode</h2>
+                <p className="text-gray-500">Advanced</p> 
+              </div>
+              <span className="w-full h-2 mt-2 bg-gradient-to-t from-blue-500 to-cyan-500 block rounded-md" />
+          </div>
+          <div className="mt-8">
+              <div className="flex justify-between items-center">
+                <h2 className="font-semibold">HackerRank</h2>
+                <p className="text-gray-500">Advanced</p>
+              </div>
+              <span className="w-full h-2 mt-2 bg-gradient-to-t from-blue-500 to-cyan-500 block rounded-md" />
+          </div>
+          <div className="mt-8">
+              <div className="flex justify-between items-center">
+                <h2 className="font-semibold">CodeChef</h2>
+                <p className="text-gray-500">Advanced</p>
+              </div>
+              <span className="w-full h-2 mt-2 bg-gradient-to-t from-blue-500 to-cyan-500 block rounded-md" />
+          </div> */}
+        </div>
+       </section>
+        {/* About me */}
         <section className="py-8" id="aboutme">
           <div className="container m-auto px-4">
             <h2 className="text-2xl font-semibold">About me</h2>
@@ -311,6 +391,7 @@ function App() {
           </div>
         </section>
       </main>
+
       <footer>
         <div className="container m-auto flex justify-between px-4 py-6">
           <div>
