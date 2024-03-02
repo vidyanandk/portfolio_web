@@ -1,0 +1,73 @@
+.email-form-container {
+    max-width: 600px;
+    margin: 0 auto;
+    /* margin-left: 100px; */
+    padding: 20px;
+    /* border: 1px solid #ccc; */
+    border-radius: 8px;
+    /* height: 600px; */
+    /* background-color: #f9f9f9; */
+}
+
+.email-form-container h2 {
+    font-size: 24px;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+.email-form-container form {
+    display: flex;
+    flex-direction: column;
+}
+
+.email-form-container label {
+    font-size: 16px;
+    margin-bottom: 5px;
+}
+
+.email-form-container input[type="email"],
+.email-form-container input[type="text"],
+.email-form-container textarea {
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 16px;
+}
+
+.email-form-container textarea {
+    resize: vertical; /* Allow vertical resizing */
+    min-height: 250px; /* Set a minimum height */
+    width: 100%;
+}
+
+.email-form-container button[type="submit"] {
+    padding: 12px 20px;
+    border: none;
+    border-radius: 5px;
+    background-color: #007bff;
+    color: #fff;
+    font-size: 18px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.email-form-container button[type="submit"]:hover {
+    background-color: #0056b3;
+}
+.email-form-container input{
+    width:100%;
+}
+/* Responsive styles */
+@media (max-width: 480px) {
+    .email-form-container {
+        width: 100%;
+    }
+}
+
+.contact h1{
+    padding-left: 15px;
+    font-size: 50px;
+    font-weight: 400;
+    font-stretch: expanded;
+}

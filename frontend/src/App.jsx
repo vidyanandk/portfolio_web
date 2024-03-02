@@ -1,13 +1,6 @@
 import "./App.css";
-import Porfile from "../public/assets/Photo.jpg";
-import Project1 from "../public/assets/project1.png";
-import Project2 from "../public/assets/project2.png";
-import Project3 from "../public/assets/project3.png";
-import Project4 from "../public/assets/project4.png";
-import Facebook from "../public/assets/facebook.svg";
-import LinkedIn from "../public/assets/linkedin.svg";
-import Instagram from "../public/assets/instagram.svg";
-import ArrowDown from "../public/assets/arrow-down.svg";
+import {DownloadButton} from './components.jsx';
+import {Contact} from './contact.jsx';
 import { useEffect, useState } from "react";
 
 
@@ -60,6 +53,11 @@ function App() {
                     About me
                   </a>
                 </li>
+                <li>
+                  <a href="#contact" className="text-gray-400 hover:text-white cursor-pointer">
+                    contact
+                  </a>
+                </li>
               </ul>
             </div>
           </div>
@@ -67,7 +65,7 @@ function App() {
       </header>
       <main className="relative mt-28">
         {/* Intro/Banner section */}
-        <section>
+        <section id="home">
           <div className="container m-auto px-4 pt-12 pb-12 sm:pt-20 flex flex-col sm:flex-row gap-6 text-center sm:text-left">
             <div>
               <h2 className="font-bold text-4xl">Hello, Vidyanad,</h2>
@@ -78,14 +76,16 @@ function App() {
                 <p className="mt-4 text-gray-400">
                  Lorem ipsum dolor sit amet, consectetur adipisicing elit. Magni, eligendi quisquam id tempore ducimus perferendis.
                 </p>
-                <button className="px-8 shadow-gray-500 shadow-md py-5 mt-5 bg-gradient-to-t from-blue-500 rounded-full to-cyan-500 hover:from-blue-700 hover:to-cyan-700">
+                {/* <button className="px-8 shadow-gray-500 shadow-md py-5 mt-5 bg-gradient-to-t from-blue-500 rounded-full to-cyan-500 hover:from-blue-700 hover:to-cyan-700">
                   Download resume
-                </button>
+                </button> */}
+                <DownloadButton />
+
               </div>
             </div>
             <div className="relative">
               <div className="after:bg-[url('./large-long.png')] after:bg-contain after:block after:bg-no-repeat after:w-[420px] after:h-[320px] after:absolute after:top-0 after:-left-20 sm:after:-left-40 before:bg-[url('./small.png')] before:bg-contain before:block before:bg-no-repeat before:w-[220px] before:h-[220px] before:absolute before:bottom-0 before:-right-10">
-                <img src={Porfile} className="relative z-10 w-[280px] m-auto sm:w-[600px]" />
+                <img src="../public/assets/Photo.jpg" className="relative z-10 w-[280px] m-auto sm:w-[600px]" />
               </div>
             </div>
           </div>
@@ -96,7 +96,7 @@ function App() {
             <h2 className="text-2xl font-semibold">Projects</h2>
             <div className="flex flex-col sm:flex-row gap-10 mt-11">
               <div className="border border-gray-500 rounded-md p-5 flex-1">
-                <img src={Project1} className="w-full h-auto" />
+                <img src="../public/assets/project1.png" className="w-full h-auto" />
                 <h3 className="text-2xl font-semibold mt-8">
                   Furniture store landing page
                 </h3>
@@ -113,7 +113,7 @@ function App() {
                 </div>
               </div>
               <div className="border border-gray-500 rounded-md p-5 flex-1">
-                <img src={Project2} className="w-full h-auto" />
+                <img src="../public/assets/project2.png" className="w-full h-auto" />
                 <h3 className="text-2xl font-semibold mt-8">
                   Designer furniture store landing page
                 </h3>
@@ -132,7 +132,7 @@ function App() {
             </div>
             <div className="flex flex-col sm:flex-row  gap-10 mt-11">
               <div className="border border-gray-500 rounded-md p-5 flex-1">
-                <img src={Project3} className="w-full h-auto" />
+                <img src="../public/assets/project3.png" className="w-full h-auto" />
                 <h3 className="text-2xl font-semibold mt-8">
                   Landing page for front-end developer
                 </h3>
@@ -149,7 +149,7 @@ function App() {
                 </div>
               </div>
               <div className="border border-gray-500 rounded-md p-5 flex-1">
-                <img src={Project4} className="w-full h-auto" />
+                <img src="../public/assets/project4.png" className="w-full h-auto" />
                 <h3 className="text-2xl font-semibold mt-8">
                   Website redesign for The Venus project
                 </h3>
@@ -390,6 +390,10 @@ function App() {
             </div>
           </div>
         </section>
+        {/* Contact me */}
+        <section id="contact">
+          <Contact />
+        </section>
       </main>
 
       <footer>
@@ -402,18 +406,18 @@ function App() {
               <li>
 
               <a>
-                  <img src={LinkedIn} className="w-5 to-cyan-500 hover:from-blue-700 hover:to-cyan-700" onClick={()=>handleClick({url:'https://www.linkedin.com/in/vidyanandkumar2210/'})} />
+                  <img src="../public/assets/linkedin.svg" className="w-5 to-cyan-500 hover:from-blue-700 hover:to-cyan-700" onClick={()=>handleClick({url:'https://www.linkedin.com/in/vidyanandkumar2210/'})} />
                 </a>
                 
               </li>
               <li>
                 <a>
-                  <img src={Instagram} className="w-5" onClick={()=>handleClick({url:'https://www.linkedin.com/in/vidyanandkumar2210/'})} />
+                  <img src="../public/assets/instagram.svg" className="w-5" onClick={()=>handleClick({url:'https://www.linkedin.com/in/vidyanandkumar2210/'})} />
                 </a>
               </li>
               <li>
               <a>
-                  <img src={Facebook} className="w-5" onClick={()=>handleClick({url:'https://www.linkedin.com/in/vidyanandkumar2210/'})} />
+                  <img src="../public/assets/facebook.svg" className="w-5" onClick={()=>handleClick({url:'https://www.linkedin.com/in/vidyanandkumar2210/'})} />
                 </a>
               </li>
             </ul>
@@ -425,7 +429,7 @@ function App() {
           <button className="fixed block right-8 bottom-0 w-24" onClick={() => {
             window.scrollTo(0,0);
           }}>
-            <img src={ArrowDown} />
+            <img src="../public/assets/arrow-down.svg" />
           </button>
         )
       }
