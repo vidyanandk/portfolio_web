@@ -7,6 +7,7 @@ const Contact = () => {
     const [message, setMessage] = useState('');
 
      const baseUrl = "http://localhost:5000";
+     const deployUrl="https://portfolio-web-3.onrender.com"
 
     const handleSubmit = async () => {
         //  e.preventDefault();
@@ -22,7 +23,7 @@ const Contact = () => {
         try {
             
 
-            const response=await axios.post(`${baseUrl}/email/sendEmail`,formData);
+            const response=await axios.post(`${deployUrl}/email/sendEmail`,formData);
             
 
             if (response.ok) {

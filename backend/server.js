@@ -24,6 +24,7 @@ app.use(express.json()); // tell the server to accept the json data from fronten
 app.get('/', (req, res) => {
   res.send('Hello World!')
 })
+
 app.use("/email", emailRoutes);
 
 // app.use("/",)
