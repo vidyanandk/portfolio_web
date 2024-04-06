@@ -1,0 +1,1 @@
+Crafted my portfolio website using Vite, Node.js, and Tailwind CSS. Leveraged Vite's fast build times and hot module replacement for seamless development experience. Utilized Node.js for backend functionality and Tailwind CSS for rapid and responsive UI development. Resulted in a sleek, modern website that showcases my skills and projects effectively.
