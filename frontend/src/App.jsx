@@ -238,7 +238,7 @@ Interest Calculation, Database Integration, File Handling, Account Closure.
                   <h2 className="font-semibold">Tailwind CSS & Python</h2>
                   <p className="text-gray-500">Advanced</p>
                 </div>
-                <span className="w-[45%] h-2 mt-2 bg-gradient-to-t from-blue-500 to-cyan-500 block rounded-md" />
+                <span className="w-[56%] h-2 mt-2 bg-gradient-to-t from-blue-500 to-cyan-500 block rounded-md" />
               </div>
             </div>
           </div>
