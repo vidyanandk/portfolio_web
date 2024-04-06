@@ -2,7 +2,7 @@ import "./App.css";
 import {DownloadButton} from './components.jsx';
 import {Contact} from './contact.jsx';
 import { useEffect, useState } from "react";
-
+// import {My_self} from '../public/assets/My_self.jpg'; 
 
 function App() {
   const [scrolling, setScrolling] = useState(false);
@@ -89,10 +89,9 @@ function App() {
 
               </div>
             </div>
-            <div className="relative">
-              <div className="after:bg-[url('./large-long.png')] after:bg-contain after:block after:bg-no-repeat after:w-[420px] after:h-[320px] after:absolute after:top-0 after:-left-20 sm:after:-left-40 before:bg-[url('./small.png')] before:bg-contain before:block before:bg-no-repeat before:w-[220px] before:h-[220px] before:absolute before:bottom-0 before:-right-10 ">
-                <img src="../public/assets/Photo.png" className="transition-all rounded-full relative z-10 w-[280px] m-auto sm:w-[600px] " />
-              </div>
+            <div className="relative w-full flex justify-center items-center">
+            <img src="../public/assets/My_self.jpg" className="w-auto h-72   rounded-full border-4   border-white " />
+          
             </div>
           </div>
         </section>
