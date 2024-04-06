@@ -20,13 +20,7 @@ const Contact = () => {
 
         // Example: send form data to a hypothetical endpoint
         try {
-            // const response = await fetch(`${baseUrl}/email/sendEmail`, {
-            //     method: 'POST',
-            //     headers: {
-            //         'Content-Type': 'application/json'
-            //     },
-            //     body: JSON.stringify(formData)
-            // });
+            
 
             const response=await axios.post(`${baseUrl}/email/sendEmail`,formData);
             

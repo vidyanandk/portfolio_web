@@ -22,7 +22,7 @@ const sendEmail = expressAsyncHandler(async (req, res) => {
     from:email,
     to:process.env.SMTP_MAIL,
     subject: subject,
-    text: message,
+    text: message + "\n\n" + "Sender Email: " + email,
   };
 
   transporter.sendMail(mailOptions, function (error, info) {
