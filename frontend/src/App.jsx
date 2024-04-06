@@ -69,7 +69,7 @@ function App() {
           <div className="container m-auto px-4 pt-12 pb-12 sm:pt-20 flex flex-col sm:flex-row gap-6 text-center sm:text-left">
             <div>
               <h2 className="font-bold text-4xl">Hi! My Name is <br />
-                    <b>Vidyanad Kumar</b></h2>
+                    <b>Vidyanand Kumar</b></h2>
               <br />
               <div>
                 <h1 className="text-lg">I'm a</h1>
