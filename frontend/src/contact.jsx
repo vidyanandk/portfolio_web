@@ -23,7 +23,7 @@ const Contact = () => {
         try {
             
 
-            const response=await axios.post(`${baseUrl}/email/sendEmail`,formData);
+            const response=await axios.post(`${deployUrl}/email/sendEmail`,formData);
             
 
             if (response.ok) {
