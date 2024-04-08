@@ -2,7 +2,7 @@ import "./App.css";
 import {DownloadButton} from './components.jsx';
 import {Contact} from './contact.jsx';
 import { useEffect, useState } from "react";
-// import {My_self} from '../public/assets/My_self.jpg'; 
+import Images from './Images.jsx'; 
 
 function App() {
   const [scrolling, setScrolling] = useState(false);
@@ -90,8 +90,12 @@ function App() {
               </div>
             </div>
             <div className="relative w-full flex justify-center items-center">
-            <img src="../public/assets/My_self.jpg" className="w-auto h-72   rounded-full border-4   border-white " />
+           
+            {/* <img src="../public/assets/My_self.jpg" className="w-auto h-72   rounded-full border-4   border-white " /> */}
           
+
+            <img src={Images.My_self} className="w-auto h-72   rounded-full border-4   border-white " />
+
             </div>
           </div>
         </section>
@@ -101,7 +105,7 @@ function App() {
             <h2 className="text-2xl font-semibold">Projects</h2>
             <div className="flex flex-col sm:flex-row gap-10 mt-11">
               <div className="border border-gray-500 rounded-md p-5 flex-1">
-                <img src="../public/assets/project1.png" className="w-full h-auto" />
+                <img src={Images.project1} className="w-full h-auto" />
                 <h3 className="text-2xl font-semibold mt-8">
                   Sneaker Website
                 </h3>
@@ -118,7 +122,7 @@ function App() {
                 </div>
               </div>
               <div className="border border-gray-500 rounded-md p-5 flex-1">
-                <img src="../public/assets/project2.png" className="w-full h-[160px]" />
+                <img src={Images.project2}  className="w-full h-[160px]" />
                 <h3 className="text-2xl font-semibold mt-8">
                   My Portfolio
                 </h3>
@@ -137,7 +141,7 @@ function App() {
             </div>
             <div className="flex flex-col sm:flex-row  gap-10 mt-11">
               <div className="border border-gray-500 rounded-md p-5 flex-1">
-                <img src="../public/assets/project3.png" className="w-full h-auto" />
+                <img src={Images.project3}  className="w-full h-auto" />
                 <h3 className="text-2xl font-semibold mt-8">
                 Bank Management System
                 </h3>
@@ -159,7 +163,7 @@ Interest Calculation, Database Integration, File Handling, Account Closure.
                 </div>
               </div>
               <div className="border border-gray-500 rounded-md p-5 flex-1">
-                <img src="../public/assets/project4.png" className="w-full h-[240px]" />
+                <img src={Images.project4} className="w-full h-[240px]" />
                 <h3 className="text-2xl font-semibold mt-8">
                 RideCost-Calculator
                 </h3>
@@ -297,7 +301,7 @@ Interest Calculation, Database Integration, File Handling, Account Closure.
             <div className="mt-12 flex flex-col sm:flex-row lg:flex-row justify-center gap-1">
               <div className="w-[148px] border border-gray-500 rounded-md p-5 flex-1">
                 <div className="w-full  h-auto">
-                  <img src="../public/assets/leetcode.png" />
+                  <img src={Images.leetcode}  />
                 </div>
                 <button className="w-full h-auto flex-1 text-sm py-3 bg-gradient-to-t from-blue-500 rounded-[2px] to-cyan-500 hover:from-blue-700 hover:to-cyan-700" onClick={()=>handleClick({url:'https://leetcode.com/vidy7014/'})}>
                     Leetcode
@@ -305,7 +309,7 @@ Interest Calculation, Database Integration, File Handling, Account Closure.
               </div>
               <div className="w-[148px] border border-gray-500 rounded-md p-5 flex-1">
                 <div className="w-full h-auto">
-                  <img src="../public/assets/codeforce.png" />
+                  <img src={Images.codeforce}  />
                 </div>
                 <button className="w-full h-auto flex-1 text-sm py-3 bg-gradient-to-t from-blue-500 rounded-[2px] to-cyan-500 hover:from-blue-700 hover:to-cyan-700" onClick={()=>handleClick({url:'https://codeforces.com/profile/Vidyanand'})}>
                     Codeforces
@@ -313,7 +317,7 @@ Interest Calculation, Database Integration, File Handling, Account Closure.
               </div>
               <div className="w-[148px] border border-gray-500 rounded-md p-5 flex-1">
                 <div className="w-full h-auto">
-                  <img src="../public/assets/codechef.jpg" />
+                  <img src={Images.codechef}  />
                 </div>
                 <button className="w-full h-auto flex-1 text-sm py-3 bg-gradient-to-t from-blue-500 rounded-[2px] to-cyan-500 hover:from-blue-700 hover:to-cyan-700" onClick={()=>handleClick({url:'https://www.codechef.com/users/sky100'})}>
                     Codechef
@@ -321,7 +325,7 @@ Interest Calculation, Database Integration, File Handling, Account Closure.
               </div>
               <div className="w-[148px] border border-gray-500 rounded-md p-5 flex-1">
                 <div className="w-full h-auto">
-                  <img src="../public/assets/gfg.png" />
+                  <img src={Images.gfg}  />
                 </div>
                 <button className="w-full h-auto flex-1 text-sm py-3 bg-gradient-to-t from-blue-500 rounded-[2px] to-cyan-500 hover:from-blue-700 hover:to-cyan-700" onClick={()=>handleClick({url:'https://auth.geeksforgeeks.org/user/vidyanandkugd88/'})}>
                     GFG
@@ -377,18 +381,18 @@ Interest Calculation, Database Integration, File Handling, Account Closure.
               <li>
 
               <a>
-                  <img src="../public/assets/linkedin.svg" className="w-5 to-cyan-500 hover:from-blue-700 hover:to-cyan-700" onClick={()=>handleClick({url:'https://www.linkedin.com/in/vidyanandkumar2210/'})} />
+                  <img src={Images.linkedin} className="w-5 to-cyan-500 hover:from-blue-700 hover:to-cyan-700" onClick={()=>handleClick({url:'https://www.linkedin.com/in/vidyanandkumar2210/'})} />
                 </a>
                 
               </li>
               <li>
                 <a>
-                  <img src="../public/assets/instagram.svg" className="w-5" onClick={()=>handleClick({url:'https://www.instagram.com/vidy7482/'})} />
+                  <img src={Images.instagram}  className="w-5" onClick={()=>handleClick({url:'https://www.instagram.com/vidy7482/'})} />
                 </a>
               </li>
               <li>
               <a>
-                  <img src="../public/assets/facebook.svg" className="w-5" onClick={()=>handleClick({url:'https://www.facebook.com/profile.php?id=100054284919777'})} />
+                  <img src={Images.facebook}  className="w-5" onClick={()=>handleClick({url:'https://www.facebook.com/profile.php?id=100054284919777'})} />
                 </a>
               </li>
             </ul>
@@ -400,7 +404,7 @@ Interest Calculation, Database Integration, File Handling, Account Closure.
           <button className="fixed block right-8 bottom-0 w-24" onClick={() => {
             window.scrollTo(0,0);
           }}>
-            <img src="../public/assets/arrow-down.svg" />
+            <img src={Images.arrow_down}  />
           </button>
         )
       }

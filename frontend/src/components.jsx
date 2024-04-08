@@ -40,7 +40,7 @@ const DownloadButton = () => {
     useEffect(() => {
         const handleDownload = () => {
             const downloadLink = document.createElement('a');
-            downloadLink.href = '../public/assets/Vidyanand_Resume_NITJ.pdf'; // Update the href to the correct file path
+            downloadLink.href = './assets/Vidyanand_Resume_NITJ.pdf'; // Update the href to the correct file path
             downloadLink.download = 'Resume.pdf';
             downloadLink.style.display = 'none';
             document.body.appendChild(downloadLink);
