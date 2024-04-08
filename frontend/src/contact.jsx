@@ -7,7 +7,7 @@ const Contact = () => {
     const [message, setMessage] = useState('');
 
      const baseUrl = "http://localhost:5000";
-     const deployUrl="https://portfolio-web-3.onrender.com"
+     const deployUrl="https://portfolio-web-3.onrender.com/"
 
     const handleSubmit = async () => {
         //  e.preventDefault();
