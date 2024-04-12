@@ -7,10 +7,14 @@ const Contact = () => {
     const [message, setMessage] = useState('');
 
      const baseUrl = "http://localhost:5000";
-     const deployUrl="https://portfolio-web-3.onrender.com/"
+     const deployUrl=`https://portfolio-web-3.onrender.com`;
 
-    const handleSubmit = async () => {
-        //  e.preventDefault();
+    const handleSubmit = async (e) => {
+        // e.preventDefault();
+        
+        // Force a reload from the server, bypassing the cache
+        // location.reload(true);
+        //  toast.loading('Sending email...');
 
         // Form data to send to the server
         const formData = {
@@ -18,11 +22,11 @@ const Contact = () => {
             subject,
             message
         };
-
+          
         // Example: send form data to a hypothetical endpoint
         try {
             
-
+           
             const response=await axios.post(`${deployUrl}/email/sendEmail`,formData);
             
 
@@ -76,6 +80,7 @@ const Contact = () => {
                     ></textarea>
                 </div>
                 <button type="submit">Submit</button>
+                 
             </form>
         </div>
     </div>
