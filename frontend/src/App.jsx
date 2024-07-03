@@ -127,14 +127,7 @@ function App() {
                 <img src={Images.project1} className="w-full h-auto" />
                 <h3 className="text-2xl font-semibold mt-8">Sneaker Website</h3>
                 <p className="text-gray-300 text-sm mt-2">
-                  Led development of dynamic sneaker e-commerce platform with
-                  React.js, JavaScript, HTML, and Bootstrap. Designed visually
-                  appealing UI, integrating real-time updates and seamless
-                  checkout. Utilized React's component-based architecture for
-                  efficient code management. Implemented Bootstrap for
-                  responsive, mobile-friendly design. Demonstrates proficiency
-                  in React.js, JavaScript, HTML, and Bootstrap, showcasing
-                  ability to create engaging web apps.
+                Led the development of a dynamic sneaker e-commerce platform using React.js, JavaScript, HTML, and Bootstrap. Designed a visually appealing and user-friendly UI, integrating real-time updates and a seamless checkout process. Utilized React's component-based architecture for efficient code management and maintenance. Implemented Bootstrap for a responsive, mobile-friendly design. This project demonstrates proficiency in React.js, JavaScript, HTML, and Bootstrap, highlighting my ability to create engaging and high-performance web applications.
                 </p>
                 <div className="flex mt-12 gap-2">
                   <button className="flex-1 text-sm py-3 bg-gradient-to-t from-blue-500 rounded-full to-cyan-500 hover:from-blue-700 hover:to-cyan-700">
@@ -150,29 +143,32 @@ function App() {
                   </button>
                 </div>
               </div>
+
               <div className="border border-gray-500 rounded-md p-5 flex-1">
-                <img src={Images.project2} className="w-full h-[160px]" />
-                <h3 className="text-2xl font-semibold mt-8">My Portfolio</h3>
+                <img src={Images.project5} className="w-full h-auto" />
+                <h3 className="text-2xl font-semibold mt-8">
+                  Feedify
+                </h3>
                 <p className="text-gray-300 text-sm mt-2">
-                  Crafted my portfolio website using Vite, Node.js, and Tailwind
-                  CSS. Leveraged Vite's fast build times and hot module
-                  replacement for seamless development experience. Utilized
-                  Node.js for backend functionality and Tailwind CSS for rapid
-                  and responsive UI development. Resulted in a sleek, modern
-                  website that showcases my skills and projects effectively.
+                Feedify is a comprehensive student feedback analysis platform designed to streamline the process of collecting, analyzing, and understanding student feedback. This project utilizes modern web technologies, including ReactJS, NodeJS, ExpressJS, and TailwindCSS, alongside advanced Natural Language Processing (NLP) techniques powered by Hugging Face. The goal of Feedify is to enhance the feedback analysis process for college students, teachers, and administration, ultimately leading to improved educational experiences and institutional policies.
                 </p>
-                <div className="flex gap-2 mt-12">
+                <div className="flex gap-4 mt-12">
                   <button className="flex-1 text-sm py-3 bg-gradient-to-t from-blue-500 rounded-full to-cyan-500 hover:from-blue-700 hover:to-cyan-700">
-                    Live preview
+                    <a href="https://github.com/vidyanandk/FEEDIFY">
+                      Live preview
+                    </a>
                   </button>
                   <button className="flex-1 text-sm py-3 border rounded-full hover:border-blue-500 hover:text-blue-500">
-                    <a href="https://github.com/vidyanandk/portfolio_web">
+                    <a href="https://github.com/vidyanandk/FEEDIFY">
+                      {" "}
                       Checkout github
                     </a>
                   </button>
                 </div>
               </div>
+
             </div>
+            {/* 2nd row */}
             <div className="flex flex-col sm:flex-row  gap-10 mt-11">
               <div className="border border-gray-500 rounded-md p-5 flex-1">
                 <img src={Images.project3} className="w-full h-auto" />
@@ -229,7 +225,34 @@ function App() {
                 </div>
               </div>
             </div>
+            {/* 3rd row */}
+            <div className="flex flex-col sm:flex-row  gap-10 mt-11">
+              <div className="border border-gray-500 rounded-md p-5 flex-1 max-w-[48%]">
+                <img src={Images.project2} className="w-full h-[160px]" />
+                <h3 className="text-2xl font-semibold mt-8">My Portfolio</h3>
+                <p className="text-gray-300 text-sm mt-2">
+                  Crafted my portfolio website using Vite, Node.js, and Tailwind
+                  CSS. Leveraged Vite's fast build times and hot module
+                  replacement for seamless development experience. Utilized
+                  Node.js for backend functionality and Tailwind CSS for rapid
+                  and responsive UI development. Resulted in a sleek, modern
+                  website that showcases my skills and projects effectively.
+                </p>
+                <div className="flex gap-2 mt-12">
+                  <button className="flex-1 text-sm py-3 bg-gradient-to-t from-blue-500 rounded-full to-cyan-500 hover:from-blue-700 hover:to-cyan-700">
+                    Live preview
+                  </button>
+                  <button className="flex-1 text-sm py-3 border rounded-full hover:border-blue-500 hover:text-blue-500">
+                    <a href="https://github.com/vidyanandk/portfolio_web">
+                      Checkout github
+                    </a>
+                  </button>
+                </div>
+              </div>
+            </div>
+            
           </div>
+
         </section>
         {/* Technoglies section */}
         <section className="py-10" id="technologies">
