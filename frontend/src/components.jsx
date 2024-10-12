@@ -42,7 +42,7 @@ const DownloadButton = () => {
 
     return (
         <div>
-            <button id="downloadButton" className="px-8 shadow-gray-500 shadow-md py-5 mt-5 bg-gradient-to-t from-blue-500 rounded-full to-cyan-500 hover:from-blue-700 hover:to-cyan-700"><a href="https://drive.google.com/file/d/1txn27t_xdcAH2rNX-mbEf-hDcNVo6cwS/view?usp=drivesdk">Download resume</a> </button>
+            <button id="downloadButton" className="px-8 shadow-gray-500 shadow-md py-5 mt-5 bg-gradient-to-t from-blue-500 rounded-full to-cyan-500 hover:from-blue-700 hover:to-cyan-700"><a href="https://drive.google.com/file/d/13h5JW7uhevFwPh8pSWZgHs-zm944wtPl/view?usp=drivesdk">Download resume</a> </button>
 
         </div>
     );

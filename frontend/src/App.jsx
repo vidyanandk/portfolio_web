@@ -249,6 +249,24 @@ function App() {
                   </button>
                 </div>
               </div>
+
+              <div className="border border-gray-500 rounded-md p-5 flex-1 max-w-[48%]">
+                <img src={Images.project6} className="w-full h-[160px]" />
+                <h3 className="text-2xl font-semibold mt-8"> Legally A Legal AI Chatbot</h3>
+                <p className="text-gray-300 text-sm mt-2">
+                Legally is an AI-powered chatbot designed to help users better understand Indian law by providing clear, accurate, and context-aware legal information. The chatbot's main objective is to assist individuals in comprehending the legal implications of various actions, offering corresponding punishments or penalties as outlined in Indian law for specific crimes or offenses.
+                </p>
+                <div className="flex gap-2 mt-12">
+                  <button className="flex-1 text-sm py-3 bg-gradient-to-t from-blue-500 rounded-full to-cyan-500 hover:from-blue-700 hover:to-cyan-700">
+                    Live preview
+                  </button>
+                  <button className="flex-1 text-sm py-3 border rounded-full hover:border-blue-500 hover:text-blue-500">
+                    <a href="https://github.com/vidyanandk/Legal_AI_Chatbot">
+                      Checkout github
+                    </a>
+                  </button>
+                </div>
+              </div>
             </div>
             
           </div>

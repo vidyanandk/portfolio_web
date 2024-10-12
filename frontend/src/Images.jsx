@@ -13,6 +13,7 @@ import project3 from './assets/project3.png';
 import project4 from './assets/project4.png';
 import project5 from './assets/project5.png';
 import linkedin from './assets/linkedin.svg';
+import project6 from './assets/image6.png';
 import arrow_down from './assets/arrow-down.svg';
 
 const Images = {
@@ -30,6 +31,7 @@ const Images = {
     project3,
     project4,
     project5,
+    project6,
     linkedin,
     arrow_down
 };
